@@ -1,14 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-up Form</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="app.js"></script>
-</head>
-<body>
-<h1>Heading</h1>  
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-column">
+        <div class="logo">
+          <h1>This is a logo</h1>
+        </div>
+      </div>
+
+      <div class="right-column">
+        <div class="body-copy">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams.
+          </p>
+          <p>Sign up now to get started.</p>
+          <p>You know you want to.</p>
+        </div>
+        <div class="form-row">
+          <form action="post">
+            <div class="form-container">
+              <div class="field-set-container">
+                <div class="field-set">
+                  <label for="first-name">First Name</label>
+                  <input
+                    id="first-name"
+                    placeholder="John"
+                    name="first-name"
+                    type="text"
+                  />
+                </div>
+                <div class="field-set">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" />
+                </div>
+
+                <div class="field-set">
+                  <label for="password">Password</label>
+                  <input id="password" name="password" type="password" />
+                </div>
+              </div>
+              <div class="field-set-container">
+                <div class="field-set">
+                  <label for="last-name">Last Name</label>
+                  <input
+                    id="last-name"
+                    placeholder="Doe"
+                    name="last-name"
+                    type="text"
+                  />
+                </div>
+
+                <div class="field-set">
+                  <label for="phone">Phone number</label>
+                  <input
+                    id="phone"
+                    placeholder="(##)-####-####"
+                    name="phone"
+                    type="tel"
+                    required
+                  />
+                </div>
+                <div class="field-set">
+                  <label for="password-confirm">Confirm password</label>
+                  <input
+                    id="password-confirm"
+                    name="password-confirm"
+                    type="password"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
